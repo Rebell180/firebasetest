@@ -1,0 +1,12 @@
+<p>landingpage works!</p>
+
+
+<section>
+    <div>
+        <ul>
+            @for( item of (this.fireStoreService.items$ | async ); track item){
+                <li>{{ item['title'] }}</li>
+            }
+        </ul>
+    </div>
+</section>
